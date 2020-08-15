@@ -9,7 +9,7 @@ class Movie{
          this.studio = _studio
          this.rating = _rating
     }
-    getPG(ip_array: Movie[]){
+    getPG(ip_array: Movie[]):Movie[]{
         return ip_array.filter((ele) => ele.rating == "PG")
     }
 }
